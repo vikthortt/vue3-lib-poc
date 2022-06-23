@@ -1,7 +1,7 @@
 {
   "name": "@vikthortt/vue3-lib-poc",
   "private": false,
-  "version": "0.0.0",
+  "version": "0.1.0",
   "scripts": {
     "dev": "vite",
     "prebuild": "rm -R ./_types ./types ./dist || true",
