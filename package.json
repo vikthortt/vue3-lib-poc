@@ -10,7 +10,8 @@
     "preview": "vite preview"
   },
   "files": [
-    "dist"
+    "dist",
+    "types"
   ],
   "types": "./types/index.d.ts",
   "main": "./dist/my-lib.umd.js",
