@@ -1,3 +1,4 @@
+const path = require("path");
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 
@@ -6,7 +7,7 @@ export default defineConfig({
   plugins: [vue()],
   build: {
     lib: {
-      entry: 'src/main.ts',
+      entry: path.resolve(__dirname, 'src/index.ts'),
       name: 'MyLib',
       fileName: (format) => `my-lib.${format}.js`
     },
