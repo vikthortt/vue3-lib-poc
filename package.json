@@ -7,7 +7,8 @@
     "prebuild": "rm -R ./_types ./types ./dist || true",
     "build": "vite build && vue-tsc --emitDeclarationOnly && mv _types/src ./types",
     "postbuild": "rm -R ./_types || true",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "prepublishOnly": "npm run build"
   },
   "files": [
     "dist",
